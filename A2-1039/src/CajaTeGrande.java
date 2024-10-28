@@ -25,7 +25,13 @@ public class CajaTeGrande implements CajaTe {
     }
 
     @Override
+    public void notificar() {
+        // Notificar el total de sobres en la caja grande
+        System.out.println("Notificando desde " + nombre + ": " + calcularSobres() + " sobres en total.");
+    }
+
+    @Override
     public String toString() {
-        return nombre + " (" + calcularSobres();
+        return nombre;
     }
 }

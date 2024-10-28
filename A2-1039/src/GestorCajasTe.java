@@ -9,4 +9,8 @@ public class GestorCajasTe {
         int totalEnvio = envio.calcularSobres();
         System.out.println("El envío a Asia contiene " + totalEnvio + " unidades de té");
     }
+
+    public void notificarEnvio() {
+        envio.notificar();
+    }
 }
